@@ -3,10 +3,8 @@
 Ask Major is a web-based course search system that allows students to quickly explore university courses using course codes and instantly view course details.
 
 ## 🌐 Live Demo
-
-**Website:** `https://ask-major.vercel.app`
-**API:** `https://ask-major-api.onrender.com/api/health`
-
+Website: [Open Website](https://ask-major.vercel.app)  
+API: [Check API](https://ask-major-api.onrender.com/api/health)
 ---
 
 ## 🚀 Features
