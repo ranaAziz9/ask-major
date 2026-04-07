@@ -1,114 +1,42 @@
-<script>
-  const API = 'https://ask-major-api.onrender.com';
-  const goBtn = document.getElementById('goBtn');
-  const codeInput = document.getElementById('codeInput');
-  const resultSection = document.getElementById('result-section');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ask Major</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
 
-  function setLoading(on) {
-    if (on) {
-      goBtn.disabled = true;
-      goBtn.innerHTML = '<span class="spinner"></span>';
-    } else {
-      goBtn.disabled = false;
-      goBtn.textContent = 'Search';
-    }
-  }
+  <div class="container">
+    <h1>Search Any Course</h1>
+    <p>Enter a course code to view details</p>
 
-  function showEmpty() {
-    resultSection.classList.add('visible');
-    resultSection.innerHTML = `
-      <div class="state-box">
-        <div class="state-icon">🔍</div>
-        <div class="state-title">No results found</div>
-        <div class="state-sub">Check the course code and try again</div>
-      </div>`;
-  }
+    <div class="search-box">
+      <input id="courseInput" type="text" placeholder="e.g. CPCS331" />
+      <button id="searchBtn">Search</button>
+    </div>
 
-  function showError() {
-    resultSection.classList.add('visible');
-    resultSection.innerHTML = `
-      <div class="err-box">
-        <span>⚠️</span>
-        <span>Could not connect to the server. Please make sure the backend is running and try again.</span>
-      </div>`;
-  }
+    <div id="errorBox" class="error" hidden></div>
 
-  function escHtml(s) {
-    return String(s)
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;');
-  }
-
-  function showResult(code, data) {
-    const prereq = data.prerequisites || '—';
-    const credits = data.Credits || '—';
-    const desc = data.description || '—';
-
-    if (prereq === '—' && credits === '—' && desc === '—') {
-      showEmpty();
-      return;
-    }
-
-    resultSection.classList.add('visible');
-    resultSection.innerHTML = `
-      <div class="course-header">
-        <span class="course-code-badge">${escHtml(code.toUpperCase())}</span>
-        <span class="found-text">Course found</span>
+    <div id="resultBox" class="result" hidden>
+      <div class="card">
+        <h3>Credits</h3>
+        <p id="credits"></p>
       </div>
-      <div class="cards">
-        <div class="card">
-          <div class="card-icon blue">⭐</div>
-          <div class="card-title">Credits</div>
-          <div class="card-value">${escHtml(credits)}</div>
-        </div>
-        <div class="card">
-          <div class="card-icon cyan">🔗</div>
-          <div class="card-title">Prerequisites</div>
-          <div class="card-value">${escHtml(prereq)}</div>
-        </div>
-        <div class="card full">
-          <div class="card-icon green">📄</div>
-          <div class="card-title">Description</div>
-          <div class="card-value text">${escHtml(desc)}</div>
-        </div>
-      </div>`;
-  }
 
-  async function search() {
-    const code = codeInput.value.trim();
-    if (!code) return;
+      <div class="card">
+        <h3>Prerequisites</h3>
+        <p id="prereq"></p>
+      </div>
 
-    setLoading(true);
-    resultSection.classList.remove('visible');
-    resultSection.innerHTML = '';
+      <div class="card">
+        <h3>Description</h3>
+        <p id="desc"></p>
+      </div>
+    </div>
+  </div>
 
-    try {
-      const r = await fetch(`${API}/api/course`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ course_code: code })
-      });
-
-      if (!r.ok) throw new Error('HTTP ' + r.status);
-
-      const data = await r.json();
-      showResult(code, data);
-    } catch (e) {
-      showError();
-      console.error(e);
-    } finally {
-      setLoading(false);
-    }
-  }
-
-  function fillAndSearch(code) {
-    codeInput.value = code;
-    search();
-  }
-
-  goBtn.addEventListener('click', search);
-  codeInput.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter') search();
-  });
-</script>
+  <script src="script.js"></script>
+</body>
+</html>

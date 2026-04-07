@@ -1,90 +1,31 @@
+const input = document.getElementById("courseInput");
+const searchBtn = document.getElementById("searchBtn");
+const resultBox = document.getElementById("resultBox");
+const errorBox = document.getElementById("errorBox");
+const creditsEl = document.getElementById("credits");
+const prereqEl = document.getElementById("prereq");
+const descEl = document.getElementById("desc");
+
 const API = "https://ask-major-api.onrender.com";
 
-const goBtn = document.getElementById("goBtn");
-const codeInput = document.getElementById("codeInput");
-const resultSection = document.getElementById("result-section");
-
-function setLoading(on) {
-  if (on) {
-    goBtn.disabled = true;
-    goBtn.innerHTML = '<span class="spinner"></span>';
-  } else {
-    goBtn.disabled = false;
-    goBtn.textContent = "Search";
-  }
+function showError(message) {
+  resultBox.hidden = true;
+  errorBox.hidden = false;
+  errorBox.textContent = message;
 }
 
-function showEmpty() {
-  resultSection.classList.add("visible");
-  resultSection.innerHTML = `
-    <div class="state-box">
-      <div class="state-icon">🔍</div>
-      <div class="state-title">No results found</div>
-      <div class="state-sub">Check the course code and try again</div>
-    </div>`;
+function showResult(data) {
+  errorBox.hidden = true;
+  resultBox.hidden = false;
+
+  creditsEl.textContent = data.Credits || "—";
+  prereqEl.textContent = data.prerequisites || "—";
+  descEl.textContent = data.description || "—";
 }
 
-function showError() {
-  resultSection.classList.add("visible");
-  resultSection.innerHTML = `
-    <div class="err-box">
-      <span>⚠️</span>
-      <span>Could not connect to the server. Please make sure the backend is running and try again.</span>
-    </div>`;
-}
-
-function escHtml(s) {
-  return String(s)
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;");
-}
-
-function showResult(code, data) {
-  const prereq = data.prerequisites || "—";
-  const credits = data.Credits || "—";
-  const desc = data.description || "—";
-
-  if (prereq === "—" && credits === "—" && desc === "—") {
-    showEmpty();
-    return;
-  }
-
-  resultSection.classList.add("visible");
-  resultSection.innerHTML = `
-    <div class="course-header">
-      <span class="course-code-badge">${escHtml(code.toUpperCase())}</span>
-      <span class="found-text">Course found</span>
-    </div>
-    <div class="cards">
-      <div class="card">
-        <div class="card-icon blue">⭐</div>
-        <div class="card-title">Credits</div>
-        <div class="card-value">${escHtml(credits)}</div>
-      </div>
-      <div class="card">
-        <div class="card-icon cyan">🔗</div>
-        <div class="card-title">Prerequisites</div>
-        <div class="card-value">${escHtml(prereq)}</div>
-      </div>
-      <div class="card full">
-        <div class="card-icon green">📄</div>
-        <div class="card-title">Description</div>
-        <div class="card-value text">${escHtml(desc)}</div>
-      </div>
-    </div>`;
-}
-
-async function search() {
-  const code = codeInput.value.trim();
-  if (!code) return;
-
-  setLoading(true);
-  resultSection.classList.remove("visible");
-  resultSection.innerHTML = "";
-
+async function searchCourse(code) {
   try {
-    const response = await fetch(`${API}/api/course`, {
+    const res = await fetch(`${API}/api/course`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -92,30 +33,28 @@ async function search() {
       body: JSON.stringify({ course_code: code }),
     });
 
-    if (!response.ok) {
-      throw new Error(`HTTP ${response.status}`);
+    if (!res.ok) {
+      throw new Error(`HTTP ${res.status}`);
     }
 
-    const data = await response.json();
-    showResult(code, data);
-  } catch (error) {
-    showError();
-    console.error(error);
-  } finally {
-    setLoading(false);
+    const data = await res.json();
+    showResult(data);
+  } catch (err) {
+    console.error(err);
+    showError("Could not connect to the server.");
   }
 }
 
-function fillAndSearch(code) {
-  codeInput.value = code;
-  search();
-}
-
-goBtn.addEventListener("click", search);
-codeInput.addEventListener("keydown", (e) => {
-  if (e.key === "Enter") {
-    search();
-  }
+searchBtn.addEventListener("click", () => {
+  const code = input.value.trim();
+  if (!code) return;
+  searchCourse(code);
 });
 
-window.fillAndSearch = fillAndSearch;
+input.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    const code = input.value.trim();
+    if (!code) return;
+    searchCourse(code);
+  }
+});
