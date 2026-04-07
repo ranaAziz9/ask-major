@@ -1,66 +1,74 @@
 # 🎓 Ask Major — KAU Course Search System
 
-A smart course search system that allows students to quickly explore university courses using course codes.
+Ask Major is a web-based course search system that allows students to quickly explore university courses using course codes and instantly view course details.
+
+## 🌐 Live Demo
+
+**Website:** `https://ask-major.vercel.app`
+**API:** `https://ask-major-api.onrender.com/api/health`
+
+---
 
 ## 🚀 Features
 
-* 🔍 Search courses by code (e.g. CPCS331)
+* 🔍 Search courses by course code
 * 📚 View:
 
   * Course credits
   * Prerequisites
-  * Description
-* ⚡ Fast retrieval using RAG (Retrieval-Augmented Generation)
-* 💻 Clean and modern frontend UI
+  * Course description
+* ⚡ Fast backend API using FastAPI
+* 💻 Clean and modern responsive interface
+* 🌐 Deployed online for public access
 
 ---
 
 ## 🧠 Tech Stack
 
-* Python (Backend)
-* JavaScript, HTML, CSS (Frontend)
-* RAG-based search system
-* CSV dataset (Course Catalog)
+* **Backend:** Python, FastAPI
+* **Frontend:** HTML, CSS, JavaScript
+* **Data Source:** CSV / Excel course catalog
+* **Deployment:** Vercel + Render
 
 ---
 
 ## 📂 Project Structure
 
-```
-backend/     → Python API & RAG logic  
-frontend/    → UI (HTML, JS, CSS)  
+```text
+ask-major/
+├── backend/
+│   ├── backend.py
+│   ├── search_core.py
+│   ├── dataset_excel/
+│   │   └── Courses_Final2.csv
+│   └── requirements.txt
+├── frontend/
+│   ├── index.html
+│   ├── script.js
+│   └── styles.css
+├── .gitignore
+├── preview.png
+└── README.md
 ```
 
 ---
 
-## ▶️ How to Run
+## 🔌 API Endpoints
 
-### 1. Clone the repo
+### Health Check
 
-```
-git clone https://github.com/your-username/ask-major.git
-cd ask-major
-```
+`GET /api/health`
 
-### 2. Run backend
+### Search Course
 
-```
-cd backend
-pip install -r requirements.txt
-python backend.py
-```
+`POST /api/course`
 
-### 3. Run frontend
+Example request body:
 
-```
-cd ../frontend
-python -m http.server 5173
-```
-
-Then open:
-
-```
-http://localhost:5173
+```json
+{
+  "course_code": "CPCS331"
+}
 ```
 
 ---
@@ -68,8 +76,32 @@ http://localhost:5173
 ## 📸 Preview
 
 ![Ask Major Preview](preview.png)
+
 ---
 
-## 👩‍💻 Author
+## ▶️ Local Run
 
-Rana Alzahrani
+### 1. Run backend
+
+```bash
+cd backend
+pip install -r requirements.txt
+uvicorn backend:app --reload
+```
+
+### 2. Run frontend
+
+Open `frontend/index.html` directly in the browser
+or use:
+
+```bash
+cd frontend
+python -m http.server 5173
+```
+
+---
+
+## Author
+**Rana Alzahrani**
+## Email
+**ranaalzahrani047@gmail.com**
