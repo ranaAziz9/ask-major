@@ -1,0 +1,882 @@
+major,track,course_code,course_title_en,course_title_ar,credits,prerequisites,description,,
+CS,cs_required,CPCS202,Programming (I),????? (?),3,NONE,"The objective of this course is to cover the
+fundamental concepts of procedural programming.
+This course introduces the Java programming
+language and helps students develop basic
+problem-solving skills. Topics include algorithms,
+flowchart, API, IDE, and JDK, numerical data,
+primitive data type, short hand operators , cast
+value of one type to another type , selection
+statements, switch statements, break and continue
+statements, relational operators, logical operators,
+logical expressions, Boolean variable, Boolean
+expressions, repetition statements, nested loops,
+methods, pass arguments to a method, method
+overloading, method abstraction, use of methods in
+the math class, arrays, common array operations,
+methods with array arguments and return value,
+search and sort operations on array.",,
+CS,cs_required,CPCS203,Programming (II),????? (?),3,CPCS202,"The objective of this course is to cover the basic and
+intermediate concepts of object oriented
+programming. Topics include the use of numerical
+data, primitive data types, selection statements,
+repetition statements, class, standard classes,
+object, instance of a class, object oriented
+programming, software development, constructor,
+methods, call by values, call by reference, UML,
+state memory diagram, class diagram, arrays,
+method overloading, constructor overloading,
+overriding, this, new, exception and assertions,
+Inheritance, encapsulation, data abstraction,
+private, public, protected, exception, inheritance,
+abstract class, polymorphism, file handling.",,
+CS,cs_required,CPCS204,Data Structures (I),?????? ???????? (?),3,CPCS203,"The objective of this course is to provide students
+an understanding of abstract data structures,
+including, but not limited to, arrays, linked lists,
+queues, stacks, trees, and graphs. The course also
+aims to give a conceptual understanding of the
+trade-offs between various data structures, hence
+enabling students to choose an optimal data
+structure for a particular application. The students
+will also learn concepts of algorithmic design,
+recursion, and a variety of searching and sorting
+algorithms.",,
+CS,cs_required,CPCS331,Artificial Intelligence (I),?????? ????????? (?),3,CPCS204,"The objective of this course is to provide a broad
+overview of AI and building intelligent systems.
+Topics include intelligent agents, problem-solving
+as a search activity, knowledge representation,
+planning, reasoning and learning. Students will also
+be introduced to evolutionary computation (EC),
+natural language processing (NLP), and
+programming in Prolog.",,
+CS,cs_required,CPIT201, Introduction to Computing,????? ?? ???????,3,NONE,"The objective of this course is to present computer
+science subject areas and applications in ways that
+serve to motivate the study of computer science
+and to put into context the various subjects that
+students encounter later in their studies. Topics
+include an introduction to the discipline of
+computing, computer systems, number systems,
+data representation, basic computer organization,
+operating system functionality, basics of
+networking, the Internet, an overview of database
+systems, models, software engineering
+methodologies, and programming languages.",,
+CS,cs_required,STAT210, Introduction to Computing Statistics,????? ???????? ,,NONE,NONE,,
+CS,cs_required,CPIT201,Introduction to Computing,????? ?????,3,NONE,"The objective of this course is to provide an
+introduction to the computer science discipline.
+Topics include the representation and manipulation
+of data in computers, description of computer
+hardware components and how the work, and an
+overview of operating systems, algorithms, and
+programming languages.",,
+CS,cs_required,STAT210,Introduction to Computing Statistics,????? ????????,3,STAT110,NONE,,
+CS,cs_required,CPIT221,Technical Writing,?????? ?????,2,STAT111,"The objective of this course is to study the
+fundamentals of technical communication. Topics
+include the concepts of technical communication
+and its differences with academic writing,
+processes in technical communication, tools and
+techniques to perform collaborative projects and
+writing, formatting the technical documents with
+modern tools and techniques, techniques to write
+official letters, memos and e-mails, writing
+definitions and descriptions, writing informal
+reports to address immediate and intermediate
+tasks accomplishment, writing formal reports to
+portray the complex nature of issues, writing
+informal proposals to cover projects with limited
+scope, writing formal proposals to submit a
+detailed document, normally applied to large
+projects, developing presentation skills, preparing
+effective CV’s and cover letters, developing skills
+for job interviews, learning styles in technical
+writing for effective revision, and practicing
+professional presentations in a seminar
+environment.",,
+CS,cs_required,ISLS101,Islamic Culture (I),????? ??????? (?),2,STAT112,NONE,,
+CS,cs_required,CPCS222,Discrete Structures (I),?????? ?????? (?),3,STAT113,"The objective of this course is to study the logical
+and algebraic relationships between discrete
+objects. This course cultivates clear thinking and
+creative problem solving by developing students’
+mathematical maturity in several core areas: logic
+and proofs, sets, functions, relations, and counting
+techniques.",,
+CS,cs_required,MATH202,Calculus (II),????? ?????? (?),3,STAT114,NONE,,
+CS,cs_required,ARAB101,Language Skills,?????? ?????,3,STAT115,NONE,,
+CS,cs_required,ISLS201,Islamic Culture (II),????? ??????? (?),2,STAT116,NONE,,
+CS,cs_required,CPCS204,Data Structures (I),?????? ?????? (?),3,STAT117,"The objective of this course is to provide students
+an understanding of abstract data structures,
+including, but not limited to, arrays, linked lists,
+queues, stacks, trees, and graphs. The course also
+aims to give a conceptual understanding of the
+trade-offs between various data structures, hence
+enabling students to choose an optimal data
+structure for a particular application. The students
+will also learn concepts of algorithmic design,
+recursion, and a variety of searching and sorting
+algorithms.",,
+CS,cs_required,CPCS211,Digital Logic Design,????? ?????? ??????,3,STAT118,"This objective of this course is to provide an
+introduction to the fundamental concepts of digital
+logic design. Topics include number systems, binary
+codes, Boolean algebra, canonical and fundamental
+forms of Boolean functions, functions applications
+to digital circuits design, minimization of Boolean
+functions by Boolean algebra and Karnaugh maps,
+two -level and multi-level digital circuits, decoders,
+encoders, multiplexers, demultiplexers, latches,
+flip-flops, registers, counters, analysis and synthesis
+of synchronous sequential circuits. Additionally,
+this course includes a laboratory component in
+which students apply the design principles learned
+in lectures to the design of combinational circuits
+and synchronous sequential circuits.",,
+CS,cs_required,CPCS212,Applied Math for Computing (I),??????? ??????? ??????? (?),4,STAT119,"The objective of this course is to familiarize
+students with the basic concepts of applied
+mathematics used in computer science. Topics
+include: Matlab: matrices and arrays, Matlab:
+graphics, Matlab: programming, solution of
+nonlinear equations, solution of systems of linear
+equations, numerical integration, numerical
+differentiation, and ordinary differential equations.",,
+CS,cs_required,CPCS214,Computer Organization and Architecture (I),????? ?????? ?????? (?),3,STAT120,"The objective of this course is to explain how
+computers are designed and how they work.
+Students are introduced to modern computer
+principles using a typical processor. They learn how
+efficient memory systems are designed to work
+closely with the processor, and how input/output
+(I/O) systems bring the processor and memory
+together with a wide range of devices. The course
+emphasizes system-level issues and understanding
+program performance. Topics include instructions
+sets, assembly language, internal data
+representation, computer arithmetic, processor
+data path and control, memory hierarchy, I/O
+devices and interconnects, and an introduction to
+parallel processing.",,
+CS,cs_required,CPCS223,Analysis & Design of Algorithms,????? ?????? ???????????,3,STAT121,"This is the first of a two-course sequence on
+computer-based algorithmic solution design and
+advanced data structures. It introduces
+fundamental algorithms for classic computing
+problems, the techniques used to construct them,
+their performance and applications. Topics include:
+formal definition and characterization of
+algorithms, recurrence relations, asymptotic
+notation and efficiency classes, iterative and
+recursive algorithm efficiency, empirical analysis of
+performance, advanced data structures such as
+balanced trees, and the design techniques: brute
+force, divide-conquer, decrease-conquer, problem
+transformation, and trading space for time.",,
+CS,cs_required,CPCS241,Database (I),????? ?????? (?),3,STAT122,"This objective of this course is to introduce students
+to database management systems. Topics include
+Data, Information, File System, Database and
+Database Users, Database System Concepts and
+Architecture, Data Modeling using the Entity
+Relationship (ER) Model, The Relational Data Model
+and Relational Database Constraints, Functional
+Dependencies and Normalization for Relational
+Databases, The Relational Algebra and Relational
+Calculus, Relational Database Design by ER and EER
+to Relational Mapping, Disk Storage, Basic File
+Structure and Hashing, SQL-99 Schema Definition,
+Constraints, Queries and Views (DDL and DML).",,
+CS,cs_required,CPCS301,Programming Languages,???? ?????,3,STAT123,"The objective of this course is to provide a
+comprehensive coverage of the fundamental
+concepts of programming languages by discussing
+the design issues of the various languages
+constructs, examining the design choices for these
+constructs in some of the most common languages,
+and critically comparing design alternatives. It
+discusses the formal methods of describing the
+syntax and semantics of programming languages.",,
+CS,cs_required,CPCS324,Algorithms & Data Structures (II),????????? ??????? ?????? (?),3,STAT124,"This is the second of a two-course sequence on
+algorithmic solution design and advanced data
+structures. The objective of this course is to study
+algorithms from a major application area, to
+illustrate advanced design techniques, and to
+introduce main concepts in computational
+complexity. The course should provide an
+opportunity to work with complex data structures
+and develop advanced programming skills. It should
+include significant discussion of applications and
+capstone project ideas. Topics include space and
+time trade-off techniques, limitations of algorithm
+power, and algorithms that illustrate advanced
+design methods such as dynamic programming,
+iterative improvement and greedy techniques.
+Suggested application areas include: graphs,
+operations research, computational geometry,
+bioinformatics, and cryptography.",,
+CS,cs_required,CPCS331,Artificial Intelligence (I),???? ??????? (?),3,STAT125,"The objective of this course is to provide a broad
+overview of AI and building intelligent systems.
+Topics include intelligent agents, problem-solving
+as a search activity, knowledge representation,
+planning, reasoning and learning. Students will also
+be introduced to evolutionary computation (EC),
+natural language processing (NLP), and
+programming in Prolog.",,
+CS,cs_required,CPCS361,Operating Systems (I),??? ??????? (?),3,STAT126,"The objective of this course is to provide a general
+overview of operating systems concepts and recent
+methodologies and techniques used in the field and
+their trades-offs, with various examples from the
+contemporary used systems. Topics include the
+basic structure of an operating system, its
+interaction with the hardware, software, and users,
+and the services it provides. The course illustrates
+different algorithms and techniques used in
+controlling, managing, and allocating various
+computer resources, such as CPU, memory, storage
+and I/O devices. It demonstrates the tuning of the
+operating system for maximizing the utilization and
+increasing the performance of the computer
+system.",,
+CS,cs_required,CPCS371,Computer Networks (I),????? (?),3,STAT127,"The objective of this course is to provide an
+introduction to computer networks and the ISO-7
+layers reference model, which includes necessary
+protocols. Selected network layers, such as data
+link layer, transport layer, network layer, etc., will
+be focused on with detailed information. In
+addition to this, network security, web technologies
+and application layer will also be introduced.",,
+CS,cs_advanced_computing,CPCS403,Internet Application Programming,????? ??????? ??????,3,STAT128,"The objective of this course is to provide a broad
+overview of Internet and Web technologies. Topics
+include HTML, XHTML, CSS, client-side scripting
+
+(JavaScript), server-side scripting (PHP), Web data-
+base connectivity, and XML Technologies. The
+
+students will be encouraged to design, implement,
+and evaluate small-scaled Web projects in
+groups/teams.",,
+CS,cs_advanced_computing,CPCS466,System Programming ,????? ???,3,STAT129,"The objective of this course is to explore the design,
+development, and operation of system
+applications. Topics include the difference between
+system software and application software in terms
+of development features and area of application,
+file systems, permanent and temporary storage
+systems, assembly compiler, high-level languages,
+application setup, memory management system,
+and processes carried out under the operating
+systems.",,
+CS,cs_advanced_computing,CPCS494,Selected Topics ,??????? ??????,3,STAT130,"The objective of this course is to explore selected
+topics about the latest advancements in the field of
+Computer Science (topics determined by the
+Council of the Computer Science Department).",,
+CS,cs_advanced_computing,CPCS405,Software Technology Topics,??????? ?? ????? ???????,3,STAT131,"The objective of this course is to explore recent
+topics related to Software Technology. Topics
+include Object-Oriented Programming
+fundamental concepts, advanced swing graphical
+user interface, advanced exception Handling
+Techniques, Streams and Files, multithreading
+programming, and networking programming.
+Moreover, the course also focuses on database
+programming (JDBC), servlets and java server pages
+(JSP), and Java Security.",,
+CS,cs_artificial_intelligence,CPCS432,Artificial Intelligence (II),???? ??????? 2,3,STAT132,"The objective of this course is to explore advanced
+topics concerning Artificial Intelligence and to cover
+programming language related to AI.",,
+CS,cs_artificial_intelligence,CPCS433,Artificial Intelligence Topics,??????? ???? ???????,3,STAT133,"The objective of this course is to explore recent
+topics related to Artificial Intelligence and the latest
+advances in this field.",,
+CS,cs_artificial_intelligence,CPCS482,Multimedia & UI Design,????? ?????? ?????? ???? ????????,3,STAT134,"The objective of this course is to explore the
+fundamentals of multimedia and the use of
+multimedia in user interface design. The course is
+intended to give students both a theoretical
+understanding of, and practical experience with,
+designing multimedia products and the user
+interface design.",,
+CS,cs_artificial_intelligence,CPCS494,Selected Topics ,??????? ??????,3,STAT135,"The objective of this course is to explore selected
+topics about the latest advancements in the field of
+Computer Science (topics determined by the
+Council of the Computer Science Department).",,
+CS,cs_cyber_security,CPCS425,Information Security,??? ???????,3,STAT136,"The objective of this course is to provide basic
+knowledge on the technical and operational issues
+of modern cryptosystems and the related
+standards. Topics include threats to network
+security and schemes for breaking security,
+classical encryption techniques, block ciphers and
+stream ciphers, DES and triple DES, AES, block
+cipher operation modes, asymmetric ciphers: RSA,
+Diffie-Hellman key exchange, ElGamal
+cryptosystem, hash functions, MAC functions,
+digital signature, key management and
+distribution, X.509 certificates, transport level
+security: SSL and TLS, Intrusion, and types and
+configurations of firewalls.",,
+CS,cs_cyber_security,CPCS463,Computing Systems Security,??? ??? ???????,3,STAT137,"The objective of this course is to introduce the
+fundamentals of Computer Security Systems and
+the potential risks and vulnerabilities in these
+therein. Topics include security management
+practices, access control systems and methodology,
+networks and Internet security, enterprise security
+architecture, operations security law, investigation,
+and ethics.",,
+CS,cs_cyber_security,CPCS464,Dependable Computing,????? ??????,3,STAT138,"The objective of this course is to acquaint students
+with the high-reliability computer systems used in
+fault intolerant critical applications. Topics include
+computing systems security, applications that
+require high-quality computer systems, mobile
+
+client system, various security protocols, multi-
+distribution system, breach discovery and
+
+prevention, wireless networks reliability
+measurement, and ensuring the quality of service.",,
+CS,cs_cyber_security,CPCS494,Selected Topics,??????? ??????,3,STAT139,NONE,,
+CS,cs_high_performance_computing,CPCS413,Computer Architecture II,????? ???? 2,3,STAT140,"The objective of this course is to explore modern
+computer architecture approaches, such as
+designing advanced computer instructions,
+parallelism, and the advanced methods of data
+processing.",,
+CS,cs_high_performance_computing,CPCS414,High Performance Computing,????? ???? ????,3,STAT141,"The objective of this course is to provide an in-
+depth overview of the current state of the art in
+
+high-performance computing. Additionally, the
+course provides more information about the
+architecture of high-performance computers.",,
+CS,cs_high_performance_computing,CPCS494,Selected Topics ,??????? ??????,3,STAT142,"The objective of this course is to explore selected
+topics about the latest advancements in the field of
+Computer Science (topics determined by the
+Council of the Computer Science Department).",,
+CS,cs_network_computing,CPCS372,Computer Network (II),????? ????   2,3,STAT143,"The objective of this course is to introduce students
+to the principles, design, implementation, and
+performance of computer networks. This course is
+based on the layering architecture and covers the
+routing protocols in detail. Topics include Internet
+routing protocols, local area networks, congestion
+control, TCP, wireless communications and
+networking, mobile IP, performance analysis,
+network address translation, multimedia over IP,
+switching and routing, peer-to-peer networking,
+network security, and other current research topics
+in the area of computer networks.",,
+CS,cs_network_computing,CPCS473,Computer Network Practice,?????? ????? ??????,3,STAT144,"The objective of this course is to explore topics
+related to the practical aspects of networks,
+thereby familiarizing students with the various
+network components. The course provides an
+understanding of the network design and analysis
+as well as network architecture, including
+requirements validation and traceability. Students
+will be introduced to analyzing, developing, and
+validating requirements regarding the network
+architecture, in addition to network management
+principles and performance evaluation.",,
+CS,cs_network_computing,CPCS474,TCP/IP & Web Networking,????? TCP/IP ??????,3,STAT145,"The objective of this course is to study the
+fundamentals of TCP/IP networks, technologies,
+and the Web. Topics include HTTP protocols, Web
+protocols, TCP/IP networks, Web services and
+standards.",,
+CS,cs_software_engineering,CPCS353,Software Engineering Practices,??????? ????? ?? ????? ?????????,3,STAT146,"The objective of this course is to further explore the
+design and thinking of object-oriented software
+engineering, from analysis through testing. Topics
+include practices of software project management,
+project estimation, distributed system
+architectures (client/ server), distributed object
+model, building client/server applications based-on
+Object-oriented technology, and Object-Oriented
+software engineering approach. The course will also
+teach students the principles and practices of
+software testing, validation, verification,
+maintenance, writing documentation, and
+evaluation of systems and tools.",,
+CS,cs_software_engineering,CPCS404,Component Based Computing,????? ?????????,3,STAT147,"The objective of this course is to familiarize
+students with Component-Based Computing.
+Topics include component fundamentals, rationale
+of using component-based computing, and their
+standard criteria. The course also focuses on recent
+
+researches and techniques related to component-
+based computing. Moreover, it covers issues
+
+related to the component-based technology, the
+various tools of component-based computing, and",,
+CS,cs_software_engineering,CPCS454,Object Oriented Analysis & Design,????? ?????? ????,3,STAT148,"The objective of this course is to familiarize
+students with the fundamental foundations of
+Object-Oriented Approach in relation to systems
+and the advantages of this method. This course
+covers understanding various approaches and
+methodologies used in different phases of software
+development lifecycle, including requirements,
+analysis and specification, software design,
+software construction, software maintenance, and
+software process.",,
+CS,cs_software_engineering,CPCS457,Software Engineering Theory,????? ????? ?????????,3,STAT149,"The objective of this course is to study the methods,
+values, attitudes, and techniques in software
+systems. It provides an understanding of the need
+for rigour and enables students to select and apply
+a relevant methodological approach to the
+development of well-designed and documented
+systems.",,
+IS,is_required,BUS230,Principles of Management,?? ????,3,STAT150,NONE,,
+IS,is_required,BUS232,Principles of Marketing,?? ????,3,STAT151,NONE,,
+IS,is_required,BUS233,Organizational Behavior,?? ????,3,STAT152,NONE,,
+IS,is_required,ACCT333,Principles of Corporate Accounting,?? ????,2,STAT153,NONE,,
+IS,is_required,CPIS210,Computer Architecture & Organization,?? ????,3,STAT154,"The objective of this course is to study the  internal architecture/components of the  computer, how they are integrated together,  and the way they are controlled. This course  should be preceded by an introduction in  Logic and Digital Design. Topics include basic  scientific concepts of how data networks  function, data transferring techniques  starting from hardware levels to high levels  of data transferring protocols over intra networks, and the scientific theories on  which the modern digital communication  technology is based.  ",,
+IS,is_required,CPIS220,Principles of Information Systems,?? ????,3,STAT155,"The objective of this course is to provide  students with an overall understanding of  the main concepts of information systems  and to highlight the importance of  information systems in modern  organizations and societies. Topics include  information, data, and system concepts,  information requirements in modern  organizations and businesses (including  decision making, operations, and other types  of requirements), introducing different types  of information systems, exploring the  systems development life cycle (analysis,  design, and implementation), methodologies  of developing information systems,  managing resources of information systems  (data, hardware, software, etc.), knowledge  management, quality and evaluation of  information systems, ethical, social, and  security issues of information systems  ",,
+IS,is_required,CPIS222,Principles of Operating Systems,?? ????,3,STAT156,"The objective of this course is to present the  basic concepts, modules and algorithms that  work as intermediary programs between the  user and the hardware, known as operating  systems. It covers the basic concepts of  recent operating systems, how they are  designed and the way they work in terms of  their efficiency and reliability. Also, it  
+compares the techniques used inside the  operating systems in terms of their speed  and use of space. Topics include an overview  of operating systems, operating system  principles, CPU scheduling and dispatch,  concurrency, memory management, and  virtual memory.  ",,
+IS,is_required,CPIS240,Database Management Systems (I),?? ????,3,STAT157,"This course is the first in a series of courses  on designing and implementing database  information systems. The objective of this  course is to prepare students to become able  to implement a working database system  using one of the popular commercial DBMSs, such as Oracle or MS SQL Server. The course  introduces students to the concepts of  databases and database modeling and  design. It, in particular, provides students  with a three-stage methodology for  designing relational database applications,  namely, conceptual, logical, and physical  database modeling and design. In the first  stage students will build a conceptual data  model that is independent of all physical  considerations. They will then transform this  model in the second stage into the relational  database logical model. In the third stage,  students will translate the logical data model  into a physical design for the target DBMS.  Topics include basic concepts of databases,  the 3-stage modeling and design  methodology, the concepts of the relational  database, conceptual data modeling using  ERD, from ERD to RDB and reverse  engineering, data normalization, SQL:DDL,  SQL: manipulation and query languages, and  relational algebra for querying.  ",,
+IS,is_required,CPIS250,Software Engineering,?? ????,3,STAT158,"The objective of this course is to introduce  the basic concepts and required skills for  software engineering. It covers the basic  concepts and skills required for developing  large scale applications that take long  periods of time. The course presents the  latest methods and techniques used in  software engineering obtained from the  actual practice in the field as well as latest  advances accomplished by specialist research centers. Also, it particularly  emphasizes on the role of team work on  developing software and the skills required  to work as part of a team. Topics include  foundation for systems development,  methodologies of IS development, software  process models, process iteration, process  activities, project management, project  scope, project management life cycle,  managing IS project, planning IS project,  feasibility study of IS project, models of  software development, determining system  requirements (functional and non-functional  requirements), data modeling and E-R-D  model, object-oriented analysis and  modeling, systems structure modeling,  object, class, attributes, methods, classes  relationships, generalization, specialization,  association, class diagrams, object-oriented  analysis and modeling.  ",,
+IS,is_required,CPIS312,Information & Computer Security,?? ????,3,STAT159,"The objective of this course is to equip  students with the scientific and  mathematical concepts and skills related to  information security. Topics include the  security of information and software  systems, including attacks and data  encryption, mathematical foundations,  algorithms of cryptography, ways of  distributing keys, techniques of data  protection over computer networks, and  controlling access using passwords.  ",,
+IS,is_required,CPIS323,Summer (Workplace) Training,?? ????,0,STAT160,"This is mandatory, 200-hour internship  program for all FCIT students. The objective  of this course is to provide students the  opportunity to apply their academic  education with hands-on, real world  experience in a work setting. Students are  sent to different companies to get the real  flavor of work group, communications, and  professional development experiences. ",,
+IS,is_required,CPIS342,Data Warehousing and Mining,?? ????,3,STAT161,"The objective of this course is to study the  basic concepts of data mining & warehousing  and the required skills to develop and use  them. It emphasizes on employing data  warehousing to support the decision-making  process. It also covers the architectures of  data warehousing and the infrastructural  settings to develop them. It explains various  ways of extracting, analyzing data to support  the decision-making process. This course is  intended to develop the student’s ability to  extract information from data and identify  patterns and trends by designing a data  warehouse and by applying data mining  methods for classification, clustering, and  association analysis. ",,
+IS,is_required,CPIS351,IS Analysis & Architecture Design,?? ????,3,STAT162,"The objective of this course is to introduce  methods used in IS analysis in order to  identify and characterize needs and to  automate and create computer systems for  them. The automated systems incorporate  several technologies, and this course studies  the way making optimum use of such  systems for the users' service. The course  emphasizes on the design phase activities  and also presents design using structural and  object-oriented techniques. Topics include  system architectures design, traditional  approach to design, object-oriented  approach to design for applications,  designing files and database, designing the  user interface, designing the system  interface and prototyping, controls and  security, implementation, and support  issues.  ",,
+IS,is_required,CPIS352,IS Applications Design & Development,?? ????,3,STAT163,"The objective of this course is to explore the  design, selection, implementation, and  management of enterprise IT solutions. The  focus is on applications and infrastructure  and their fit with the business. Topics include  frameworks and strategies for infrastructure  management, system administration,  data/information architecture, content  management, distributed computing,  middleware, legacy system integration,  system consolidation, and software  selection, total cost of ownership calculation,  IT investment analysis, and emerging  technologies. These topics are addressed  both within and beyond the organization,  with attention paid to managing risk and  security within audit and compliance  standards. Students also hone their ability to  communicate technology architecture  strategies concisely to a general business  audience.  ",,
+IS,is_required,CPIS354,Principles of Human Computer Interaction,?? ????,3,STAT164,"The objective of this course is to provide an  introduction to the field of systems provides the students with  knowledge to understand what influences  usability and acceptance of IS. Topics include  the examination of human performance,  components of technology, methods and  techniques used in design and evaluation of  IS, societal impacts of HCI, user-centered  design methods, and the contemporary  technologies used in empirical evaluation  methods.  ",,
+IS,is_required,CPIS357,Software Quality and Testing,?? ????,3,STAT165,The objective of this course is to study the  significance of quality during the process of  developing software. Topics include the  basic concepts of software quality assurance  during all the stages of software  development process and quality standard  systems used in the field of software industry  and Information Systems.  ,,
+IS,is_required,CPIS358,Internet Applications & Web Programming,?? ????,3,STAT166,"The objective of this course is to equip  students with the necessary knowledge to  design and implement Internet applications.  Topics include the specific technologies of  these applications, how to employ them in  building effective and efficient applications,  the technical characteristics of the Internet  protocols, the various structures of Internet based application development, and the  organization and security of business  transactions conducted over intranets. ",,
+IS,is_required,CPIS370,Fundamentals of Data Networks,?? ????,3,STAT167,"The objective of this course is to provide an  introduction to IT infrastructure issues for  students majoring in Information Systems. It  covers topics related to both computer and  systems architecture and communication  networks, with an overall focus on the services and capabilities that IT  infrastructure solutions enable in an  organizational context. It gives the students  the knowledge and skills that they need for  communicating effectively with  professionals whose special focus is on  hardware and systems software technology  and for designing organizational processes security, business continuity, and the role of  infrastructure in regulatory compliance.",,
+IS,is_required,CPIS380,Introduction to E Business Systems,?? ????,3,STAT168,"The objective of this course is to study the  marketing implications of the e-business  systems. Topics include impact on  information systems within a business,  impact on business design and strategy,  impact on the industries and markets, and  business models for e-business.  ",,
+IS,is_required,CPIS434,IS Strategies and Policies,?? ????,3,STAT169,"The objective of this course is to study the  processes, methods, techniques, and tools  that organizations use to manage their  information systems projects. The course  covers a systematic methodology for  initiating, planning, executing, controlling,  and closing projects. This course assumes  that project management in the modern  organization is a complex team based  activity, where various types of technologies  (including project management software as  well as software to support group collaboration) are an inherent part of the  project management process. This course  also acknowledges that project management  involves both the use of resources from  within the firm, as well as contracted from  outside the organization. ",,
+IS,is_required,CPIS498,Senior Project (I),?? ????,1,STAT170,"This course is the first part of a sequence of  two courses that constitute the graduation  
+capstone project. In this part, the student is  expected to propose, analyze, and design a  software system or conduct a thorough  investigation of a particular IS-related  problem for research-based projects. The  student will deliver oral presentations and  written reports. ",,
+IS,is_required,CPIS499,Senior Project (II),?? ????,3,STAT171,"This course is the second part of a sequence  of two courses that constitute the graduation  capstone project. In this project, the student  will continue the System/Research  development of the project that started in  CPIS-498. The student will deliver oral  presentations, progress reports, and a final  report. ",,
+IS,is_desicision_support_systems,CPIS420,Techniques of Decision Support Systems,?? ????,3,STAT172,"The objective of this course is to extend the  basic knowledge of DSS covered in the CPIS 320 by studying practical techniques and  methods for DSS. Coupled with classical  approaches, the course explores the latest  techniques available for extracting suitable  and relevant information to support making  a wide range of decisions from day to day  structured decisions, to complex  unstructured decisions. In addition, the  course also covers intelligent systems in  particular relation to DSSs.  ",,
+IS,is_desicision_support_systems,CPIS424,Modeling and Simulations,?? ????,3,STAT173,"The objective of this course is to develop the  student’s ability to understand the basic  concepts in modeling and simulation and  develop discrete event simulation models.  Topics include basic simulation modeling,  simulation input and output analysis,  validation and verification of simulation  models, and building simulation models  using Arena and MS Excel.  ",,
+IS,is_desicision_support_systems,CPIS363,Intelligent Systems,?? ????,3,STAT174,The objective of this course is to equip  students with the required skills to be able to  access information and be able to use it  efficiently through using intelligent systems  that lead to success and economic  superiority. This course will cover the  necessary concepts and techniques that  facilitate developing intelligent systems used  in business applications.  ,,
+IS,is_desicision_support_systems,CPIS490,Selected Topics in IS*,?? ????,3,STAT175,The objective of this course is to explore  selected topics concerning the latest  advancements in the field of Information  Systems (topics determined by the Council of  the Information Systems Department).  ,,
+IS,is_e_system_development,CPIS382,Dev of E Systems & Interface Design,?? ????,3,STAT176,"The objective of this course is to introduce  techniques that are useful stand-alone and  can be integrated for building a semantic  web. Topics include semantic web  technologies, data modeling languages such  as XML, XML SCHEMA, domain modeling  languages such as RDF, RDF Schema,  ontology modeling languages such as OWL,  query languages such as XQuery and SPRQL.  Also students will use tools such as Stylus  studio and Protégé in their modeling.  ",,
+IS,is_e_system_development,CPIS483,E Systems Applications,?? ????,3,STAT177,"The objective of this course is to provide  broad understanding of various e-system  Web applications and to identify the role  these E-Systems play in the development  process of institutions and the society.  Topics/applications include social networks,  e-Learning, e-government, mobile  computing, pervasive computing, e-CRM, E Auctions, E-Supply chain, and support  technology concepts such Web 2.0  applications, web services, and cloud  computing.  ",,
+IS,is_e_system_development,CPIS486,E Business Strategies,?? ????,3,STAT178,"The objective of this course is to explore e business strategies for Information systems  and the infrastructure required for web based business models. Topics include E Business and virtual organizations,  
+characteristics of virtual organizations, e business models, globalization on SME e business, strategy evaluation to change e business, virtual infrastructure, culture to administrative and technical concepts of the  transformation process to office automation  and the significance of the human impact  during this process.  ",,
+IS,is_e_system_development,CPIS363,Intelligent Systems,?? ????,3,STAT179,"The objective of this course is to explore e business strategies for Information systems  and the infrastructure required for web based business models. Topics include E Business and virtual organizations,  
+characteristics of virtual organizations, e business models, globalization on SME e business, strategy evaluation to change e business, virtual infrastructure, culture to  administrative and technical concepts of the  transformation process to office automation  and the significance of the human impact  during this process. ",,
+IS,is_e_system_development,CPIS490,Selected Topics in IS*,?? ????,3,STAT180,The objective of this course is to explore  selected topics concerning the latest  advancements in the field of Information  Systems (topics determined by the Council of  the Information Systems Department). ,,
+IT,it_required,CPIT201,Introduction to Computing,????? ?? ???????,3,STAT181,"The objective of this course is to present computer
+science subject areas and applications in ways that
+serve to motivate the study of computer science
+and to put into context the various subjects that
+students encounter later in their studies. Topics
+include an introduction to the discipline of
+computing, computer systems, number systems,
+data representation, basic computer organization,
+operating system functionality, basics of
+networking, the Internet, an overview of database
+systems, models, software engineering
+methodologies, and programming languages.",,
+IT,it_required,CPIT240,Database (I),????? ???????? (?),3,STAT182,"This course is the first in a series of courses on
+designing and implementing database information
+systems. The objective of this course is to prepare
+students to become able to implement a working
+database system using one of the popular
+commercial DBMSs. Topics include data and
+information, file system, database and database
+users, database system concepts and architecture,
+data modeling using the entity relationship (ER)
+model, the relational data model and relational
+database constraints, functional dependencies and
+normalization for relational databases, relational
+algebra and relational calculus, relational database
+design by ER and EER to relational mapping, disk
+storage, basic file structure and hashing, SQL-99
+schema definition, constraints, queries, and views.",,
+IT,it_required,CPIT220,Introduction to IT,????? ?????,3,STAT183,"The objective of this course is to provide an
+overview and understanding of the conceptual
+base of Information Technology, introducing the
+newly specialized IT students with the knowledge
+and skills related to understanding existing and
+emerging information technologies. Students will
+find this a helpful Bridge course to upper level
+courses in Information Technology. This course is
+supported with a laboratory that aims to equip
+students with practical knowledge and
+presentation skills. The purpose of this course is
+threefold: (1) to provide comprehensive and
+engaging overview of cutting edge information
+technologies, (2) to identify and discuss
+fundamental principles underlying these
+technologies, and (3) to relate these technologies
+to practical life. Topics include an introduction to
+information technology, digital and analog signals,
+inside the system unit, system software, databases
+and information systems, system analysis and
+design, information systems and databases,
+networking, privacy, crime and security.",,
+IT,it_required,CPIT210,Computer Organization & Architecture,????? ?????? ??????,3,STAT184,"The objective of this course is to provide an
+introduction to basic computer organization.
+Topics include binary, hexadecimal, and decimal
+number conversions, binary number arithmetic,
+laws of Boolean algebra, basic computer logic,
+gates, combinational circuits, sequential circuits,
+adders, counters, registers, decoder, encoder,
+comparator, multiplexer, computer organization
+buses and computer architecture, cache memory,
+computer arithmetic, instruction sets, and
+addressing modes.",,
+IT,it_required,CPIT250,System Analysis & Design ,????? ? ????? ??????,3,STAT185,"The objective of this course is to provide a
+methodical approach to developing computer
+systems, including systems planning, analysis,
+design, and implementation. The course
+approaches the development of information
+systems from a problem-solving perspective,
+placing emphasis on the strategies and techniques
+of systems analysis and design for producing
+logical methodologies for dealing with complexity
+in the development of information systems.",,
+IT,it_required,CPIT260,Operating Systems,??? ?????,3,STAT186,"The objective of this course is to provide an
+introduction to the basic concepts of modern
+operating systems. The course covers the design of
+operating systems and the way they work, in
+terms of efficiency and reliability, in addition to
+comparing between the techniques used inside
+the operating systems, in terms of time and space
+complexity. Topics include the basic components
+of different operating systems, organizing and
+managing processes, computing synchronization,
+different scheduling techniques for processors,
+storage devices, memory management, file
+systems, and input/output systems.",,
+IT,it_required,CPIT285,Computer Graphics ,???? ????,3,STAT187,"The objective of this course is to study the
+hardware and software principles of interactive
+raster graphics. Topics include an introduction to
+the basic concepts of computer graphics, vector
+and pixel displaying system, basic computer
+graphics techniques, graphical software, the use of
+
+API(s) for computer graphics, color models,
+coordinates homogeneous, transformation,
+rotation, clipping, representation of objects
+
+through polygons, two-dimensional and three-
+dimensional computer graphics techniques,
+
+coordinate transformations, drawing curves and
+surfaces, shading and lighting models, graphics
+devices, animation techniques, ray tracing, and the
+
+design and drawing of two-dimensional and three-
+dimensional graphics objects in OpenGL in C++.",,
+IT,it_required,CPIT251,Software Engineering (I),????? ??????? (?),3,STAT188,"The objective of this course is to study software
+engineering principles and techniques used in the
+specification, design, and testing of software
+systems. Major software development
+methodologies are reviewed including
+requirements, analysis and specification, design,
+testing, and documentation.",,
+IT,it_required,CPIT280,Human Computer Interaction ,????? ??????? ???????,3,STAT189,"The objective of this course is to study the
+fundamentals and principles of human computer
+interaction. Also, it is intended to develop the
+student's ability to explore and implement a
+usable design, in addition to measure, analyze, and
+evaluate the human computer interaction systems",,
+IT,it_required,CPIT370,Computer Networks,?????,3,STAT190,"The objective of this course is to provide a wide
+background of computer networks, giving students
+the basic knowledge of data communication,
+medium accessing protocols, local area networks,
+and an overview of the higher level protocols.
+Topics include principles of computer networks,
+network standard models, analog and digital
+signals, multiplexing schemes, transmission media,
+multiple access techniques, wired and wireless
+lans, network devices, IP addressing, domain name
+system, and laboratory experiments.",,
+IT,it_required,CPIT252,Software Design Patterns ,????? ????? ?????????,3,STAT191,"The objective of this course is to study the
+principles behind the patterns of software and to
+then apply a number of basic patterns. This course
+covers fundamental aspects of large scale software
+architecture, defined frameworks, design patterns,and ways of developing and establishing systems
+based on components. The purpose of this course
+is: (1) to know the classical styles of software
+pattern and the need for a language to describe
+the architecture, (2) to understand how to express
+the qualities we want our architecture to provide
+to the system or systems we are building from it,
+and (3) to know how to achieve software qualities
+using TACTICS. Topics include envisioning
+architecture (architecture business cycle),
+architectural patterns, reference models,
+reference architectures, understanding quality
+attributes, achieving qualities using tactics, and
+how to document software architecture.",,
+IT,it_required,CPIT330,IT Issues & Management ,????? ????????? ????????,3,STAT192,"The objective of this course is to study the
+concepts and application of Agile and Scrum
+techniques to manage software development
+projects. Topics include an introduction to agile
+project management, fundamentals of Scrum for
+dealing with uncertainty and risk, identifying the
+roles and their responsibilities, managing releases,
+tools for tracking and monitoring a project,
+planning an agile project, establishing the business
+reasons for the project, clarifying the business
+vision, identifying features for development in an
+iteration, fostering self-management within the
+development team, creating the optimal working
+environment, transitioning to self-management,
+running iterations, managing change, reviewing
+the iteration through a sprint review, closing the project using a sprint retrospective, applying agile
+throughout your organization, dealing with the
+legacy organization, and scaling for large projects.",,
+IT,it_required,CPIT380,Multimedia Technologies ,??????? ????? ???????,3,STAT193,"The objective of this course is to study multimedia
+technologies and programming methods to
+manipulate multimedia. Topics include creating
+and modifying images, modifying sounds, splicing
+words into sentences, reversing sounds, writing
+programs to generate dynamic web-pages from
+databases, and creating animations and movies
+with special effects.",,
+IT,it_required,CPIT305,Advanced Programming ,????? ??????,3,STAT194,"The objective of this course is to study advanced
+techniques in Java programming. Topics include
+how to build applications for different purposes,
+methods for Java programs to interact with other
+existing technologies, exception and error
+handling, streams and files operations, concurrent
+programming, network and socket programming,
+and Java Database Connectivity (JDBC).",,
+IT,it_required,CPIT425,Information Security ,??? ?????????,3,STAT195,"The objective of this course is to provide basic
+knowledge on the technical and operational issues
+of modern cryptosystems and the related
+standards. Topics include threats to network
+security and schemes for breaking security,
+classical encryption techniques, block ciphers and
+stream ciphers, DES and triple DES, AES, block
+cipher operation modes, asymmetric ciphers: RSA,
+Diffie-Hellman key exchange, ElGamal
+cryptosystem, hash functions, MAC functions,
+digital signature, key management and
+distribution, X.509 certificates, transport level
+security: SSL and TLS, Intrusion, and types and
+configurations of firewalls.",,
+IT,it_required,CPIT405,Internet's Applications,??????? ????????,3,STAT196,"The objective of this course is to study internet
+programming and web-application development.
+Students will learn basic principles and techniques
+for building internet applications. It provides
+students with the basic web-page development
+
+technologies and an introduction to dynamic web-
+page development using client-side scripting.
+
+Topics include introduction to HTTP protocol and
+client side programming, XHTML, Cascading Style
+Sheets, JavaScript DOM, XML (Name space, DTD,
+Schema, XSLT, XPATH), RSS, and AJAX.",,
+IT,it_required,CPIT498,Senior Project (1),????? ???? (?),1,STAT197,"This course is the first part of a sequence of two
+courses that constitute the graduation capstone
+project. In this course the students integrate the
+knowledge areas of IT into a development-based
+project in which they deliver proposals, reports,
+and oral presentations. The course topics cover
+planning, analysis, and design phases of the
+projects.",,
+IT,it_required,CPIT345,Database Administration ,????? ????? ????????,3,STAT198,"The objective of this course is to explore a variety
+
+of topics in Database Administration. Using hands-
+on training, students will learn about installation,
+
+configuration, administration, performance,
+security, backup and recovery, and enterprise
+services of databases. Additional topics include an
+introduction to DBMS, schemas objects,
+partitioned tables and indexes, built in data types,
+backup and recovery, enterprise tools, services
+and connectivity, locking, and concurrency.",,
+IT,it_required,CPIT435,Needs Assessment & Technology Evaluation ,????? ?????????? ? ???????????,2,STAT199,"The objective of this course is to explore the
+methods of identifying organizational needs.
+Topics include the types of the questions expected
+in personal interviews, the needed skills in how to
+identify and assess appropriate technology to
+meet the needs of the business, and how to follow
+up, make changes, and find updated technical
+solutions with the development and renewal
+requirements in the future.",,
+IT,it_required,CPIT499,Senior Project (2),????? ???? (?),3,STAT200,"This course is the second part of a sequence of
+two courses that constitute the graduation
+capstone project. This course aims to execute
+what was presented in CPIT-498 – the students
+present two reports and two presentations of the
+graduation project. The courses topics cover detail
+design, coding, testing, and project
+implementation.",,
+IT,it_required,CPIT470,Networks Administration ,????? ???????,3,STAT201,"The objective of this course is to explore the
+principles of network administration. Topics
+include network OSI layers and CISCO IOS
+configuring devices, IP addressing and subnetting,
+introduction to routing, static routing, default
+routing, dynamic routing, RIP1 and RIP2,
+troubleshooting, routing table lookup process,
+OSPF, switching & switch configuration, switch
+security, VLANs, spanning tree protocol, VTP, inter
+VLAN routing, and network troubleshooting.",,
+IT,it_required,CPIT323,Summer Training (I),??????? ??????,0,STAT202,"This is mandatory, 200-hour internship program
+for all students in FCIT. The objective of this course
+is to provide students the opportunity to apply
+their academic education with hands-on, real
+world experience in a work setting. Students are
+sent to different companies to get the real flavor
+of work group, communications, and professional
+development experiences.",,
+IT,it_required,STAT210,Introduction to computing Statistics,????? ????????,3,STAT203,NONE,,
+IT,it_required,CPIT221,Technical Writing ,?????? ?????,2,STAT204,"The objective of this course is to study the
+fundamentals of technical communication. Topics
+include the concepts of technical communication
+and its differences with academic writing,
+processes in technical communication, tools and
+techniques to perform collaborative projects and
+writing, formatting the technical documents with
+modern tools and techniques, techniques to write
+official letters, memos and e-mails, writing
+definitions and descriptions, writing informal
+reports to address immediate and intermediate
+tasks accomplishment, writing formal reports to
+portray the complex nature of issues, writing
+informal proposals to cover projects with limited
+scope, writing formal proposals to submit a
+detailed document, normally applied to large
+projects, developing presentation skills, preparing
+effective CV’s and cover letters, developing skills
+for job interviews, learning styles in technical
+writing for effective revision, and practicing
+professional presentations in a seminar
+environment.",,
+IT,it_required,CPCS202,Programming (I),????? (?),3,STAT205,"The objective of this course is to cover the
+fundamental concepts of procedural programming.
+This course introduces the Java programming
+language and helps students develop basic
+problem-solving skills. Topics include algorithms,
+flowchart, API, IDE, and JDK, numerical data,
+primitive data type, short hand operators , cast
+value of one type to another type , selection
+statements, switch statements, break and continue
+statements, relational operators, logical operators,
+logical expressions, Boolean variable, Boolean
+expressions, repetition statements, nested loops,
+methods, pass arguments to a method, method
+overloading, method abstraction, use of methods in
+the math class, arrays, common array operations,
+methods with array arguments and return value,
+search and sort operations on array.",,
+IT,it_required,CPCS203,Programming (II),????? (?),3,STAT206,"The objective of this course is to cover the basic and
+intermediate concepts of object oriented
+programming. Topics include the use of numerical
+data, primitive data types, selection statements,
+repetition statements, class, standard classes,
+object, instance of a class, object oriented
+programming, software development, constructor,
+methods, call by values, call by reference, UML,
+state memory diagram, class diagram, arrays,
+method overloading, constructor overloading,
+overriding, this, new, exception and assertions,
+Inheritance, encapsulation, data abstraction,
+private, public, protected, exception, inheritance,
+abstract class, polymorphism, file handling.",,
+IT,it_required,CPCS222,Discrete Structures (I),?????? ?????? (?),3,STAT207,"The objective of this course is to study the logical
+and algebraic relationships between discrete
+objects. This course cultivates clear thinking and
+creative problem solving by developing students’
+mathematical maturity in several core areas: logic
+and proofs, sets, functions, relations, and counting
+techniques.",,
+IT,it_required,CPCS204,Data Structures (I),?????? ?????? (?),3,STAT208,"The objective of this course is to provide students
+an understanding of abstract data structures,
+including, but not limited to, arrays, linked lists,
+queues, stacks, trees, and graphs. The course also
+aims to give a conceptual understanding of the
+trade-offs between various data structures, hence
+enabling students to choose an optimal data
+structure for a particular application. The students
+will also learn concepts of algorithmic design,
+recursion, and a variety of searching and sorting
+algorithms.",,
+IT,it_required,CPIS334,Software Project Management ,????? ?????? ??????,2,STAT209,"The objective of this course is to study the  processes, methods, techniques, and tools  that organizations use to manage their  information systems projects. The course  covers a systematic methodology for  initiating, planning, executing, controlling,  and closing projects. This course assumes  that project management in the modern  organization is a complex team based  activity, where various types of technologies  (including project management software as  well as software to support group collaboration) are an inherent part of the  project management process. This course  also acknowledges that project management  involves both the use of resources from  within the firm, as well as contracted from  outside the organization. ",,
+IT,it_required,CPIS428,Professional Computing Issues ,????? ??????? ???????,2,STAT210,"The objective of this course is to explore the  ethical and social issues sparked by the ever growing information society at the local and  global level. Topics include the impact of  digitized information on individuals and  societies, privacy, intellectual property,  computer crimes, evaluating and controlling  technology, and professional ethics and  responsibilities. The course also explores the  social impact of information technology in  different areas of human life such as Internet,  information flooding, and the computerized  world, business, medicine, law, government,  transportation, entertainment, education,  banking, e-commerce, communications, an  overview of the law, ownership of software,  software contracts and liability, privacy and  the data protection act, computer misuse,  and forensic, societies for computing  professionals, and professionalism and  ethics.  ",,
+IT,it_college_free,CPIT430,Decision Support Systems,??? ??? ??????,3,STAT211,"The objective of this course is to explore the
+concept of decision support systems and
+
+components. It gives knowledge of decision-
+making models under different circumstances, as
+
+well as identifies the intelligent systems and their
+role in the process of decision support. It also
+teaches how to deal with crises and disasters using
+decision support systems.",,
+IT,it_college_free,CPIT436,E Buisness Technology,????? ??????? ???????????,3,STAT212,"The objective of this course is to explore e-
+business technology and the use of computer
+
+techniques in updating business processes, which
+are designed to improve performance and reduce
+costs.",,
+IT,it_college_free,CPIT480,Fundamentals of Instructional Techniques,??????? ????? ???????,3,STAT213,"The objective of this course is to study the
+planning, organization and development of
+educational materials. Also, it uses the instructions
+system design model (ISD) to analyze, design,
+deliver, and evaluate instructions.",,
+IT,it_college_free,CPIT485,User Centered System Design,????? ????? ????????? ??? ????????,3,STAT214,"The objective of this course is to explore the
+concepts of instruction between humans and
+computers and how to apply the rules of design
+and quality assurance in interactive systems.",,
+IT,it_college_free,CPIT490,Selected Topics in IT*,?????? ?????? ?? ????? ?????????,3,STAT215,"The objective of this course is to explore selected
+topics on the latest advances in the field of
+Information Technology (topics determined by the
+Council of the Information Technology
+Department).",,
+IT,it_database,CPIT340,Database (II),????? ?????? (2),3,STAT216,"The objective of this course is to study advanced
+topics in the domain of databases. Topics include
+distributed databases and client-server
+architectures, concepts for object databases,
+enhanced data models for advanced applications,
+database tuning in relational database systems,
+concurrency control techniques, and database
+security.",,
+IT,it_database,CPIT440,Data Mining and Warehousing,???????? ???????? ????????,3,STAT217,"The objective of this course is to explore the
+different knowledge extraction methods and their
+representation techniques as well as knowledge
+engineering. It also introduces the different basic
+artificial intelligence theories that qualify the
+students to understand the course contents.
+Topics include an introduction to data mining and
+warehousing, data warehousing and OLAP
+technology, classification and prediction, mining
+frequent patterns, associations and correlations,
+
+review of probability and statistics, and data
+preprocessing.",,
+IT,it_database,CPIT445,Knowledge Engineering,????? ???????,3,STAT218,"The objective of this course is to explore a variety
+
+of topics in Database Administration. Using hands-
+on training, students will learn about installation,
+
+configuration, administration, performance,
+security, backup and recovery, and enterprise
+services of databases. Additional topics include an
+introduction to DBMS, schemas objects,
+partitioned tables and indexes, built in data types,
+backup and recovery, enterprise tools, services
+and connectivity, locking, and concurrency.",,
+IT,it_network,CPIT375,Data Network Design and Evaluation,????? ?????? ????? ????????,3,STAT219,"The objective of this course is to study the
+concepts and practical skills to design and evaluate
+
+data networks. Topics include technical concepts
+related to the data networks design, managerial
+aspects of the design, and technical skills needed
+to evaluate different network technologies,
+thereby enabling students to compare and
+contrast different alternatives for network designs.",,
+IT,it_network,CPIT475,Wireless Data Networks,????? ???????? ?????????,3,STAT220,"The objective of this course is to explore principles
+of IT Infrastructure, Networking and System
+Administration. Topics include cellular
+architecture, GSM, GPRS, UMTS, 802.11 WLAN
+infrastructure designing, and planning and
+administration.",,
+IT,it_software_engineering,CPIT455,Software Engineering (II),????? ????????? (2),3,STAT221,"The objective of this course is to explore software
+advanced engineering principles and techniques
+used in the specification, design, and testing of
+software systems Topics include software
+engineering confirmation and authentication,
+methods and ways of software testing building
+and managing software development teams,
+scientific and practical methods for calculating the
+costs of software development, quality
+management in software development, processes
+development in software production, and
+reconstruction management in software",,
+IT,it_software_engineering,,Software Economics,????????? ?????????,3,STAT222,"The objective of this course is to explore concepts
+in software economics. Topics include important
+economic concepts in the process of software
+development, building and empowering software
+development teams, continuous improvement of
+procedures in building software process,
+production tasks in the process of applications
+development, economies of scale operations
+related to software development, optimizing
+restricted operations and cost estimation to build
+software, models of integrated operations, spiral
+model to build software, and risk management in
+building software.",,
