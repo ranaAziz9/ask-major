@@ -67,8 +67,7 @@ http://localhost:5173
 
 ## 📸 Preview
 
-(Add screenshot here later 👀)
-
+![Ask Major Preview](preview.png)
 ---
 
 ## 👩‍💻 Author
