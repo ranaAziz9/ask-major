@@ -11,20 +11,18 @@ const descEl = $("#desc");
 const API_BASE = "https://ask-major-api.onrender.com";
 
 function showError(message) {
-  if (resultBox) resultBox.hidden = true;
-  if (errorBox) {
-    errorBox.hidden = false;
-    errorBox.textContent = message;
-  }
+  resultBox.hidden = true;
+  errorBox.hidden = false;
+  errorBox.textContent = message;
 }
 
 function showResult(data) {
-  if (errorBox) errorBox.hidden = true;
-  if (resultBox) resultBox.hidden = false;
+  errorBox.hidden = true;
+  resultBox.hidden = false;
 
-  if (creditsEl) creditsEl.textContent = data.Credits || "—";
-  if (prereqEl) prereqEl.textContent = data.prerequisites || "—";
-  if (descEl) descEl.textContent = data.description || "—";
+  creditsEl.textContent = data.Credits || "—";
+  prereqEl.textContent = data.prerequisites || "—";
+  descEl.textContent = data.description || "—";
 }
 
 async function searchCourse(courseCode) {
@@ -51,27 +49,17 @@ async function searchCourse(courseCode) {
   }
 }
 
-if (searchBtn) {
-  searchBtn.addEventListener("click", () => {
-    const courseCode = input?.value.trim();
+searchBtn.addEventListener("click", () => {
+  const courseCode = input.value.trim();
+  if (!courseCode) return;
+  searchCourse(courseCode);
+});
+
+input.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    e.preventDefault();
+    const courseCode = input.value.trim();
     if (!courseCode) return;
     searchCourse(courseCode);
-  });
-}
-
-if (input) {
-  input.addEventListener("keydown", (e) => {
-    if (e.key === "Enter") {
-      e.preventDefault();
-      const courseCode = input.value.trim();
-      if (!courseCode) return;
-      searchCourse(courseCode);
-    }
-  });
-}
-
-window.fillAndSearch = function (code) {
-  if (!input) return;
-  input.value = code;
-  searchCourse(code);
-};
+  }
+});
