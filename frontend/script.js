@@ -1,81 +1,65 @@
-const $ = (sel) => document.querySelector(sel);
+const $ = (selector) => document.querySelector(selector);
 
-const healthBox = $('#healthBox');
-const searchBtn = $('#searchBtn');
+const input = $("#courseInput");
+const searchBtn = $("#searchBtn");
+const resultBox = $("#resultBox");
+const errorBox = $("#errorBox");
+const creditsEl = $("#credits");
+const prereqEl = $("#prereq");
+const descEl = $("#desc");
 
-async function checkHealth() {
-  const apiBase = $('#apiBase').value.trim();
+const API_BASE = "https://ask-major-api.onrender.com";
 
-  try {
-    const response = await fetch(`${apiBase}/api/health`);
-    if (!response.ok) throw new Error(response.statusText);
-
-    const data = await response.json();
-
-    healthBox.textContent =
-      data.status === 'ok'
-        ? '✅ Backend is ready.'
-        : '⚠️ Backend is running, but course data is not ready.';
-  } catch (error) {
-    healthBox.textContent = '❌ Unable to connect to the backend.';
-  }
+function showError(message) {
+  resultBox.hidden = true;
+  errorBox.hidden = false;
+  errorBox.textContent = message;
 }
 
-async function searchCourse() {
-  const apiBase = $('#apiBase').value.trim();
-  const courseCode = $('#courseCode').value.trim();
+function showResult(data) {
+  errorBox.hidden = true;
+  resultBox.hidden = false;
 
-  if (!courseCode) return;
+  creditsEl.textContent = data.Credits || "—";
+  prereqEl.textContent = data.prerequisites || "—";
+  descEl.textContent = data.description || "—";
+}
 
-  searchBtn.disabled = true;
-  searchBtn.textContent = 'Searching...';
-
+async function searchCourse(courseCode) {
   try {
-    const response = await fetch(`${apiBase}/api/course`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ course_code: courseCode })
+    const response = await fetch(`${API_BASE}/api/course`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        course_code: courseCode,
+      }),
     });
 
     if (!response.ok) {
-      const text = await response.text();
-      throw new Error(`HTTP ${response.status}: ${text}`);
+      throw new Error(`HTTP ${response.status}`);
     }
 
     const data = await response.json();
-    renderResult(data);
+    showResult(data);
   } catch (error) {
-    renderError(error.message || String(error));
-  } finally {
-    searchBtn.disabled = false;
-    searchBtn.textContent = 'Search';
+    showError("Could not connect to the server. Please make sure the backend is running and try again.");
+    console.error(error);
   }
 }
 
-function renderResult(data) {
-  const box = $('#resultBox');
-  box.hidden = false;
+searchBtn.addEventListener("click", () => {
+  const courseCode = input.value.trim();
+  if (!courseCode) return;
+  searchCourse(courseCode);
+});
 
-  $('#credits').textContent = data.Credits || '—';
-  $('#prereq').textContent = data.prerequisites || '—';
-  $('#desc').textContent = data.description || '—';
-}
-
-function renderError(message) {
-  const box = $('#resultBox');
-  box.hidden = false;
-
-  $('#credits').textContent = '—';
-  $('#prereq').textContent = '—';
-  $('#desc').textContent = `Error: ${message}`;
-}
-
-searchBtn.addEventListener('click', searchCourse);
-window.addEventListener('load', checkHealth);
-
-$('#courseCode').addEventListener('keydown', (e) => {
-  if (e.key === 'Enter') {
+input.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
     e.preventDefault();
-    searchCourse();
+    const courseCode = input.value.trim();
+    if (!courseCode) return;
+    searchCourse(courseCode);
   }
 });
