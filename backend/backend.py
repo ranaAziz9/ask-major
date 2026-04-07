@@ -8,8 +8,7 @@ import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
-import backend.search_core as search_core
-
+import search_core
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
